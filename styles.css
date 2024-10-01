@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px 20px;
     background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
   }
