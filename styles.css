@@ -1,82 +1,69 @@
+/* Réinitialisation des marges et paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  /* Styles de base pour mobile */
+  body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-}
-header {
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
 
-}
-.logo img {
-    width: 150px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
+  }
+  
+  .logo img {
+    width: 100px; /* Taille plus petite sur mobile */
     height: auto;
     margin: 0 auto;
     display: block;
-    align-items: start;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-weight: 700;
-    font-size: larger;
-    color: rgb(42, 156, 231);
-    padding: 5px;
-    align-items: center;
-}
-menu li {
-    padding: 10px;
-    cursor: pointer;
   }
-nav button{
-    border-radius: 5px ;
-    border: 2px solid  rgb(42, 156, 231);
-    color: white;
-    background-color:  rgb(42, 156, 231);
-    padding: 5px;
-    
-}
-/* Styles de base */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-    .logo img {
-        width: 80px;
-        height: auto;
-    }
   
   nav {
     position: relative;
   }
   
   .menu {
-    display: flex;
-    gap: 20px;
+    display: none; /* Menu masqué par défaut sur mobile */
+    flex-direction: column;
     list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .menu li {
-    padding: 10px;
-    cursor: pointer;
+  .menu li,
+  .menu button {
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    color: white;
   }
   
- 
+  .menu button {
+    border-radius: 5px;
+    border: 2px solid rgb(42, 156, 231);
+    color: white;
+    background-color: rgb(42, 156, 231);
+    padding: 5px;
+    margin-top: 10px;
+  }
   
   /* Icône burger */
   .burger-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
@@ -88,30 +75,89 @@ header {
     background-color: #000;
   }
   
-  /* Responsive - Petits écrans */
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #fff;
-      width: 200px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  
-    .menu li, .menu button {
-      padding: 15px;
-      text-align: center;
-    }
-  
-    .burger-menu {
-      display: flex;
-    }
-  
-    .menu.active {
-      display: flex;
-    }
+  /* Active state pour le menu (au clic sur le burger) */
+  .menu.active {
+    display: flex;
   }
+  h1{
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    color: rgb(42, 156, 231);
+  }
+  /* Styles pour les écrans plus larges */
+  @media (min-width: 768px) {
+    /* Menu visible sur les écrans plus grands */
+    .menu {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+      width: auto;
+      gap: 20px;
+    }
+  
+    .menu li,
+    .menu button {
+    font-size: 13px;
+    padding: 8px;
+    text-align: left;
+    }
+  
+    .logo img {
+      width: 150px; /* Taille plus grande sur tablette et desktop */
+      height: auto;
+    }
+  
+    /* Masquer l'icône burger sur les grands écrans */
+    .burger-menu {
+      display: none;
+    }
+    .menu button {
+        border-radius: 5px;
+        border: 2px solid rgb(42, 156, 231);
+        color: white;
+        background-color: rgb(42, 156, 231);
+        margin-top: 0;
+      }
+  }
+  @media (min-width: 1024px) {
+    /* Menu visible sur les écrans plus grands */
+    .menu {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+      width: auto;
+      gap: 20px;
+    }
+  
+    .menu li,
+    .menu button {
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    }
+  
+    .logo img {
+      width: 150px; /* Taille plus grande sur tablette et desktop */
+      height: auto;
+    }
+  
+    /* Masquer l'icône burger sur les grands écrans */
+    .burger-menu {
+      display: none;
+    }
+    .menu button {
+        border-radius: 5px;
+        border: 2px solid rgb(42, 156, 231);
+        color: white;
+        background-color: rgb(42, 156, 231);
+        margin-top: 0;
+      }
+  }
+
+  
   
