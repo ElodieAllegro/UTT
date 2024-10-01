@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+.logo img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    align-items: start;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(42, 156, 231);
+    padding: 5px;
+    align-items: center;
+    
+}
+li {
+    list-style-type: none; /* Enlève le style de puce par défaut */
+    padding: 10px;
+    cursor: pointer; /* Change le curseur au survol */
+  }
+  
+  li:hover {
+    border-bottom: 2px solid  rgb(42, 156, 231) ; /* Affiche un trait noir de 2px sous l'élément au survol */
+  }
+  
+nav button{
+    border-radius: 5px ;
+    border: 2px solid  rgb(42, 156, 231);
+    color: white;
+    background-color:  rgb(42, 156, 231);
+    padding: 5px;
+    
+}
