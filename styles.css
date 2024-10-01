@@ -87,6 +87,9 @@
   /* Styles pour les écrans plus larges */
   @media (min-width: 768px) {
     /* Menu visible sur les écrans plus grands */
+   header{
+    background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
+   }
     .menu {
       display: flex;
       flex-direction: row;
@@ -124,6 +127,9 @@
   }
   @media (min-width: 1024px) {
     /* Menu visible sur les écrans plus grands */
+    header {
+      background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
+    }
     .menu {
       display: flex;
       flex-direction: row;
@@ -150,12 +156,15 @@
     .burger-menu {
       display: none;
     }
-   .menu li, .menu button {
+    .menu button {
         border-radius: 5px;
         border: 2px solid rgb(42, 156, 231);
         color: white;
         background-color: rgb(42, 156, 231);
         margin-top: 0;
+      }
+      .menu li{
+        color:white;
       }
   }
 
