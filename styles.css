@@ -49,7 +49,7 @@
     text-align: center;
     font-weight: 700;
     font-size: larger;
-    color: white;
+    color: rgb(42, 156, 231);
   }
   
   .menu button {
@@ -103,6 +103,7 @@
     font-size: 13px;
     padding: 8px;
     text-align: left;
+    color: white;
     }
   
     .logo img {
@@ -150,7 +151,7 @@
     .burger-menu {
       display: none;
     }
-    .menu button {
+   .menu li, .menu button {
         border-radius: 5px;
         border: 2px solid rgb(42, 156, 231);
         color: white;
