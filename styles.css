@@ -91,6 +91,24 @@ nav {
   flex-wrap: wrap;
   align-items: center;
 }
+.header-bottom {
+  background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
+  padding: 19px 0;
+  width: 100%;
+  overflow: hidden;
+  /* clip-path: ellipse(80% 20% at 50% 100%); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header-bottom {
+  background: linear-gradient(90deg, #4532DB 0%, #2C6EDF 50%, #2ED6FA 100%);
+  padding: 19px 0;
+  width: 100%;
+  overflow: hidden;
+  clip-path: ellipse(145% 100% at 27% 0);
+}
+
 
 .header-bottom .title h1 {
   font-size: 30px;
@@ -393,13 +411,12 @@ button {
     height: auto;
     padding: 20px;
   }
-
   .header-bottom-content .content p {
     width: 72%;
-    padding: 0 110px;
-    margin: 15px 57px;
+    padding: 0px 85px;
+    margin: 15px 38px;
     font-size: 22px;
-  }
+}
 
   button {
     width: 25%;
