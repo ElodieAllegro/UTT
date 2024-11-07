@@ -3,8 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arial", Sans-serif;
 }
-
+  
+.img {
+    transition: transform 0.2s ease-out; /* Transition douce pour l'effet de défilement */
+  }
+  
 /* Styles de base pour mobile */
 body {
   font-family: Arial, sans-serif;
@@ -520,7 +525,25 @@ button {
     padding: 20px;
   } */
 }
+.footer-top{
+  padding:0;
+  display: flex;
+}
 
+.footer-top .footer-top-content{
+ width: 50%;
+ display: block;
+ align-self: center;
+ margin: 20px;
+}
+
+
+.footer-top .footer-top-right{
+  width: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
 /* ------ style pour les ecrans larges desktop ------------ */
 
 @media (min-width: 1024px) {
